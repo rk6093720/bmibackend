@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require("../modals/user.model"); 
+const {UserModel} = require("../modals/user.model"); 
 const Calculation = require("../modals/calculation.model"); 
 
 
