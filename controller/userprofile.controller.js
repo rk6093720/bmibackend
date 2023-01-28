@@ -14,7 +14,7 @@ const editProfile = async (req, res) => {
   const hash_password = await bcrypt.hash(password, 4);
   await UserModel.findOneAndUpdate(
     { _id: user_id },
-    { email, password: hash_password, name},
+    { name,email, password: hash_password },
     { new: true }
   );
   try {
